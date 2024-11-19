@@ -20,3 +20,14 @@ Result table:
 | [17-18.5)   | Mild thinness         | [35-40)     | Moderate obesity      |
 | [18.5-25)   | Normal weight         | >= 40       | Morbid obesity        |
 
+```mermaid
+flowchart TD
+    start([Start]) --> init[Initialize Application]
+    init --> inputData[Input Person Data and BWI Values]
+    inputData --> calcBWI[Calculate BWI]
+    calcBWI --> classify[Classify BWI]
+    classify --> saveResult[Save Result to History]
+    saveResult --> decision{Show All Results?}
+    decision -- Yes --> showResults[Display All Records]
+    decision -- No --> en([End])
+    showResults --> en
