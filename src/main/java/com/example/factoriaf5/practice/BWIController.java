@@ -2,23 +2,21 @@ package com.example.factoriaf5.practice;
 
 public class BWIController {
 
-    public static void calculatorBWI() {
+    BWIView view = new BWIView();
 
-        BWIView userIO = new BWIView();
-        double userWeight = userIO.askWeight();
-        double userHeight = userIO.askheight();
-
-        Person user = new Person(userWeight, userHeight);
-        BWIModel model = new BWIModel(user);
-
-        double bwi = model.calculateBWI();
-        String classification = model.giveResultBWString(bwi);
-
-        userIO.showResult(bwi, classification);
-
+    public BWIController() {
     }
 
+    public double getWeight() {
+        return  view.askWeight();
+    }
 
-    
+    public double getHeight() {
+        return view.askheight();
+    }
+
+    public String getName() {
+        return view.askName();
+    }
 
 }
