@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BWIRepo {
+    
     private static final List<String> calculationHistory = new ArrayList<>();
     
     public BWIRepo() {
     }
     
-
     public static void saveResult(Person person, double bwi, String classification) {
             
         String record = "name: " + person.getName() + 

@@ -19,7 +19,7 @@ public class Person {
     public String getName() {
         return name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
@@ -38,6 +38,8 @@ public class Person {
         this.height = height;
     }
 
-    
-
+    @Override
+    public String toString() {
+        return "Person{name='" + name + "', weight=" + weight + ", height=" + height + "}";
+    }
 }

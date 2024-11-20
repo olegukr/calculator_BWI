@@ -15,11 +15,11 @@ Captura de pantalla de la sección "Testing" de visual studio code donde se apre
 NOTA: Queda prohibida la publicación del contenido adjunto.
 
 
-A console program is to be developed that calculates a person's body mass index. The application will request the person's weight (in kilograms) and height (in meters). The body mass index (BMI) is calculated using the following formula:
+A console program is to be developed that calculates a person's body mass index. The application will request the person's weight (in kilograms) and height (in meters). The body weight index (BWI) is calculated using the following formula:
 
-BMI = weight / height2
+BWI = weight / height2
 
-Then, from the BMI obtained, it is possible to calculate whether a person has a normal weight, underweight, overweight, or obesity. To generate these results, the calculated BMI must be within the ranges in the table (See attached document)
+Then, from the BWI obtained, it is possible to calculate whether a person has a normal weight, underweight, overweight, or obesity. To generate these results, the calculated BWI must be within the ranges in the table (See attached document)
 
 Requirements:
 It is mandatory to perform unit tests (minimum coverage 70%)
@@ -32,8 +32,8 @@ NOTE: The publication of the attached content is prohibited.
 Resultado: 
 
 
-| IMC         | Resultado              | IMC        | Resultado              |
-|-------------|------------------------|------------|------------------------|
+| IMC         | Resultado              | IMC        | Resultado             |
+|-------------|------------------------|------------|-----------------------|
 | < 16        | Delgadez severa        | [25-30)    | Sobrepeso             |
 | [16-17)     | Delgadez moderada      | [30-35)    | Obesidad leve         |
 | [17-18.5)   | Delgadez leve          | [35-40)    | Obesidad moderada     |
@@ -43,7 +43,7 @@ Resultado:
 
 Result table:
 
-| BMI (IMC)   | Result                | BMI (IMC)   | Result                |
+| BWI (IMC,BM)| Result                | BWI(IMC,BMI)| Result                |
 |-------------|-----------------------|-------------|-----------------------|
 | < 16        | Severe thinness       | [25-30)     | Overweight            |
 | [16-17)     | Moderate thinness     | [30-35)     | Mild obesity          |

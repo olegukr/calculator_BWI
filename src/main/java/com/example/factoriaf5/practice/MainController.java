@@ -1,19 +1,24 @@
 package com.example.factoriaf5.practice;
 
+import java.util.Scanner;
+
 public final class MainController {
+
 
     public MainController() {
 
-        BWIView userIO = new BWIView();
-        BWIController controller = new BWIController();
-        
+        Scanner scanner = new Scanner(System.in);
+
+        BWIView userIO = new BWIView(scanner);
+        userIO.msgWelcome();
+                
         boolean isContinue = true;
 
         while (isContinue) {
 
             String name = userIO.askName();
             double userWeight = userIO.askWeight();
-            double userHeight = userIO.askheight();
+            double userHeight = userIO.askHeight();
 
             Person user = new Person(name, userWeight, userHeight);
 

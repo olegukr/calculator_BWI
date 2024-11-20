@@ -5,10 +5,16 @@ import java.util.Scanner;
 
 public class BWIView {
 
-    private final Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
-    public BWIView() {
+    public BWIView(Scanner scanner) {
+        this.scanner = scanner;
     }
+
+        public void msgWelcome() {
+            System.out.println("\nWelcome to BWI calculator!");
+            System.out.println("--------------------------\n");
+        }
 
     //ask weight
     public double askWeight() {
@@ -18,7 +24,7 @@ public class BWIView {
     }
 
     //ask height
-    public double askheight() {
+    public double askHeight() {
         System.out.print("Enter your height in meters: ");
         return scanner.nextDouble();
         }
@@ -30,7 +36,6 @@ public class BWIView {
 
         // show
         System.out.println("Classification: " + classification);
-
     }    
 
     public String askName() {
